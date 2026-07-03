@@ -5,7 +5,9 @@ Company Name: Khaya Payroll (Pty) Ltd Tagline: Payroll and HR, simplified for 
 Business description: Khaya Payroll is a cloud-based SaaS platform providing payroll processing and core HR management for South African SMEs (10–250 employees). The platform automates monthly payroll runs, PAYE/UIF/SDL statutory calculations and submissions to SARS, leave management, and employee self-service (payslips, leave requests, personal detail updates).
 Customer base: ~180 SME clients, approximately 40,000 employee records processed monthly across all clients combined. Client industries include retail, hospitality, professional services, and a small number of NGOs.
 2. Data Processed
-Data Classification & Sensitivity
+
+## Data Classification & Sensitivity
+
 | Data Category | Examples | Sensitivity Notes |
 | :--- | :--- | :--- |
 | **Identity data** | Full names, SA ID numbers, tax numbers | **High** — ID numbers are a POPIA-sensitive identifier |
