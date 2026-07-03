@@ -28,19 +28,19 @@ Methodology
 
 Each finding follows a consistent structure to keep the assessment auditable and easy to navigate:
 
-1. Requirement summary** — what the framework actually requires, in plain English
-2. Current state** — what the (fictional) company does today
-3. Gap identified** — the specific delta between requirement and reality
-4. Risk rating** — Low / Medium / Medium-High / High, with explicit reasoning
-5. Recommendation** — a specific, actionable fix, not a vague statement
+1. Requirement summary — what the framework actually requires, in plain English
+2. Current state — what the (fictional) company does today
+3. Gap identified — the specific delta between requirement and reality
+4. Risk rating — Low / Medium / Medium-High / High, with explicit reasoning
+5. Recommendation — a specific, actionable fix, not a vague statement
 
 Findings are cross-referenced where they compound one another (e.g. the missing Information Officer affects multiple other findings), and consolidated into a phased remediation roadmap (Foundational → Short-term → Ongoing) sequenced by dependency and severity.
 
 Tools used
 
 - draw.io / diagrams.net** — data flow diagramming
-- Notion** — GRC documentation, risk register, and gap tracking
-- Markdown** — portable documentation for this repository
+- Notion — GRC documentation, risk register, and gap tracking
+- Markdown — portable documentation for this repository
 
 Skills demonstrated
 
