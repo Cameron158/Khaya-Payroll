@@ -93,8 +93,51 @@ including a documented backout/rollback plan for changes (see CC8:
 Change Management for further detail on this control).
 
 ---
+### CC4: Monitoring Activities
 
-*Remaining categories (CC4–CC9, Availability) in progress.*
+**Requirement summary:** The organization must have an ongoing process 
+to evaluate whether internal controls are present and functioning as 
+intended over time — distinct from identifying risks (CC3), this 
+criterion verifies that existing controls actually work in practice, not 
+just on paper.
+
+**Current state:** No manager or process currently checks whether 
+informal practices are being followed. Given the absence of documented 
+policies (as established throughout this assessment), there is nothing 
+to check compliance against in the first place, and no one is verifying 
+that even ad hoc practices are happening consistently.
+
+**Gap identified:** Without a monitoring function, there is no mechanism 
+to verify whether existing or newly implemented controls are actually 
+functioning as intended over time. A control that quietly stops being 
+performed — such as a weekly access log review lapsing after a few 
+months — carries the same practical risk as if the control never 
+existed, but is arguably more dangerous, since Khaya Payroll and its 
+clients would continue operating under a false sense of security, 
+potentially forgoing other precautions or accepting additional risk 
+elsewhere in the belief that this control still provides protection it 
+no longer does.
+
+**Risk rating:** Medium-High — while there is currently little to 
+monitor given how few controls are yet implemented, this criterion 
+should be addressed in parallel with the Phase 1/Phase 2 rollout of new 
+controls (per the POPIA roadmap and SOC 2 recommendations so far), 
+rather than deferred until after implementation. Building monitoring in 
+from the outset reduces the risk of newly implemented controls silently 
+decaying before a verification habit is established.
+
+**Recommendation:** Fold control monitoring into the existing CC3 
+governance cadence rather than creating a separate review cycle: the 
+monthly check-in should include a lightweight sign-off confirming key 
+controls (e.g. access log reviews, MFA enforcement) are being performed 
+as intended, while the quarterly deep-dive should include a fuller 
+checklist-based review of all implemented controls, owned jointly by the 
+Information Officer and IT Head. This ensures monitoring is built in 
+alongside new controls as they roll out, rather than treated as a 
+separate initiative to address later.
+
+---
+*Remaining categories (CC5–CC9, Availability) in progress.*
 
 ---
 
