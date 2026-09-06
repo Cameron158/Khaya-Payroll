@@ -137,7 +137,54 @@ alongside new controls as they roll out, rather than treated as a
 separate initiative to address later.
 
 ---
-*Remaining categories (CC5–CC9, Availability) in progress.*
+
+### CC5: Control Activities
+
+**Requirement summary:** The organization must select and develop 
+control activities that address identified risks, and deploy those 
+controls through documented policies and procedures that establish what 
+should happen, who is responsible, and how it should be carried out.
+
+**Current state:** All recommendations produced through this assessment 
+— across both the POPIA gap assessment and this SOC 2 analysis — 
+currently sit as recommended actions within assessment documents, not 
+yet adopted as live, approved policies or procedures. Even where a 
+control might technically be implemented (e.g. MFA enabled on the 
+platform), there is no formal, written procedure specifying how the 
+control should operate day-to-day — such as enrollment timelines, 
+exception handling, or who approves deviations — meaning the control's 
+proper functioning depends on informal understanding rather than a 
+documented standard.
+
+**Gap identified:** Without formally adopted policies and procedures, 
+Khaya Payroll cannot demonstrate to an auditor that its controls are 
+consistently enforced or properly disseminated across the company — 
+recommendations remain good ideas rather than established, accountable 
+practices. This leaves room for ambiguity in how a control should 
+actually operate day-to-day, weakens clarity around ownership and 
+responsibility, and increases risk further as the company grows or as 
+staff with informal knowledge of "how things are supposed to work" leave 
+the business.
+
+**Risk rating:** High — this finding is foundational to whether any 
+other recommendation in this assessment (POPIA or SOC 2) actually takes 
+effect. Without formal adoption, every control designed throughout this 
+project remains a suggestion rather than an enforceable practice, 
+meaning the value of the entire assessment depends on this gap being 
+closed.
+
+**Recommendation:** Require formal CEO sign-off (as the designated 
+Information Officer) for all policies and procedures before they are 
+considered adopted, ensuring company-wide accountability rather than 
+informal or partial rollout. Establish a standard policy template — 
+covering purpose, scope, procedure detail, owner, and review date — so 
+every future policy (access control, incident response, data retention, 
+etc.) follows a consistent structure, making it easier for staff to 
+understand, follow, and for auditors to verify.
+
+---
+
+*Remaining categories (CC6–CC9, Availability) in progress.*
 
 ---
 
