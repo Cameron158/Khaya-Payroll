@@ -184,7 +184,61 @@ understand, follow, and for auditors to verify.
 
 ---
 
-*Remaining categories (CC6–CC9, Availability) in progress.*
+### CC6: Logical & Physical Access Controls
+
+**Requirement summary:** The organization must implement controls to 
+restrict logical access to systems and data (authentication, 
+authorization, and timely de-provisioning) and physical access to 
+locations where systems or sensitive information are stored or handled.
+
+**Current state:** Logical access controls mirror the findings already 
+documented under POPIA Condition 7: authentication relies on username 
+and password only, with no MFA, no confirmed encryption of sensitive 
+data fields, and no consistent process for revoking access when staff 
+depart. On the physical side, no formal policy governs office access 
+(e.g. no ID badge system or building access log), and there is no 
+defined device return or data-wipe process for company laptops when an 
+employee leaves — meaning a departing employee's device, and any locally 
+cached data or saved credentials on it, may remain unaccounted for.
+
+*Note on scope: per Section 6 of the company scope document, physical 
+office security was originally excluded from this assessment's scope. 
+Given Khaya Payroll's cloud-hosted architecture (no self-managed data 
+centers), the physical security portion of CC6 is limited to office and 
+device-level controls rather than a full physical infrastructure review; 
+the cloud provider's own physical security controls would typically be 
+evidenced via their SOC 2 report as a sub-processor.*
+
+**Gap identified:** Because the logical access weaknesses already 
+identified in POPIA Condition 7 remain unresolved, this finding largely 
+restates that gap under SOC 2's Common Criteria framework. On the 
+physical side, without a device return/wipe process or building access 
+controls, a departing employee's laptop — potentially containing cached 
+production data, saved credentials, or client information — may leave 
+the company unaccounted for, creating risk of unauthorized data 
+exposure, competitive insider disclosure, or simple loss of company 
+assets that were never properly tracked or recovered.
+
+**Risk rating:** Medium-High — the logical access component carries the 
+same severity as POPIA Condition 7 (High), but since Khaya Payroll's 
+physical security exposure is limited to office/device level rather than 
+data-center infrastructure (given cloud-hosted architecture, per the 
+Section 6 scope decision), the combined finding is rated slightly lower 
+than a full physical security review would warrant.
+
+**Recommendation:** For logical access, implement the controls already 
+recommended under POPIA Condition 7 (MFA, RBAC, encryption, access 
+logging, and access revocation within 2 weeks of termination). For 
+physical access, implement a device offboarding procedure requiring 
+laptop return and a confirmed data wipe within 1 week of an employee's 
+last day for in-office staff, or within 2 weeks for remote staff to 
+allow time for shipping. Introduce basic building access control (e.g. 
+ID badge or sign-in log) for the office, and require full-disk 
+encryption on all staff laptops as a baseline control regardless of role.
+
+---
+
+*Remaining categories (CC7–CC9, Availability) in progress.*
 
 ---
 
