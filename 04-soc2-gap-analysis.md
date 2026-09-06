@@ -91,7 +91,7 @@ integration, feature, or vendor before it goes live, assessing security
 and privacy implications in advance rather than after deployment — 
 including a documented backout/rollback plan for changes (see CC8: 
 Change Management for further detail on this control).
----
+---**
 
 *Remaining categories (CC4–CC9, Availability) in progress.*
 
