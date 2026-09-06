@@ -49,8 +49,51 @@ Security (CC1–CC9) and Availability (A1). See [`01-company-scope.md`](./01-com
 **Recommendation:** Implement regular security awareness training for staff, covering how to recognize common threats (e.g. phishing, suspicious access requests) and how to escalate concerns. Provide an anonymous internal reporting channel so employees can flag suspected issues without fear of appearing mistaken or facing repercussions. Externally, publish a responsible disclosure policy and designate a clear contact point (e.g. a dedicated security@ email address) so clients, researchers, or other external parties have a legitimate, private channel to report vulnerabilities before they are disclosed publicly.
 
 ---
+### CC3: Risk Assessment
 
-*Remaining categories (CC3–CC9, Availability) in progress.*
+**Requirement summary:** The organization must have a process for 
+identifying risks to achieving its security objectives, analyzing those 
+risks (likelihood/impact), and determining how to manage them — 
+including risks arising from change (new systems, vendors, 
+restructuring) and the potential for fraud.
+
+**Current state:** Prior to this assessment, Khaya Payroll had no formal 
+risk register, risk assessment workshop, or documented process for 
+identifying and evaluating security or compliance risks. Risk 
+assessment, where it happens at all, occurs reactively — after a system, 
+integration, or process already exists — rather than proactively before 
+a change is implemented, meaning new integrations, features, or vendors 
+are adopted without a structured evaluation of their security or privacy 
+implications beforehand.
+
+**Gap identified:** Without a formal, repeatable risk assessment 
+process, Khaya Payroll's understanding of its own risk exposure is 
+currently limited to one-off exercises like this assessment, rather than 
+an ongoing internal capability. This differs from CC1 (no ownership) and 
+CC2 (no reporting channel) in a specific way: even an organization with 
+clear security ownership and a working communication channel can still 
+fail this criterion if it never actively and regularly checks its own 
+security posture for emerging risks — effectively waiting for something 
+to go wrong rather than proactively looking for problems before they 
+occur.
+
+**Risk rating:** Medium-High — comparable to CC2, since this gap does 
+not remove ownership or block reporting outright, but leaves the 
+organization without a systematic way of discovering risk before it 
+materializes into an actual incident.
+
+**Recommendation:** Establish an ongoing risk assessment capability, 
+jointly owned by the Information Officer (per CC1's combined mandate) 
+and the IT Head, consisting of a brief monthly risk check-in and a more 
+thorough quarterly deep-dive review of the risk register. Separately, 
+implement a pre-implementation risk review (impact analysis) for any new 
+integration, feature, or vendor before it goes live, assessing security 
+and privacy implications in advance rather than after deployment — 
+including a documented backout/rollback plan for changes (see CC8: 
+Change Management for further detail on this control).
+---
+
+*Remaining categories (CC4–CC9, Availability) in progress.*
 
 ---
 
