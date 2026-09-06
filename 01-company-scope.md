@@ -1,10 +1,13 @@
-Khaya Payroll — Company & Scope Document
+**Khaya Payroll — Company & Scope Document**
 
+---
 1. Company Overview
 Company Name: Khaya Payroll (Pty) Ltd Tagline: Payroll and HR, simplified for growing SA businesses. Founded: 2022 Headquarters: Cape Town, South Africa Team size: ~35 employees (engineering, customer success, sales, and a 2-person compliance/finance team)
 Business description: Khaya Payroll is a cloud-based SaaS platform providing payroll processing and core HR management for South African SMEs (10–250 employees). The platform automates monthly payroll runs, PAYE/UIF/SDL statutory calculations and submissions to SARS, leave management, and employee self-service (payslips, leave requests, personal detail updates).
 Customer base: ~180 SME clients, approximately 40,000 employee records processed monthly across all clients combined. Client industries include retail, hospitality, professional services, and a small number of NGOs.
-2. Data Processed
+---
+
+3. Data Processed
 
 ## Data Classification & Sensitivity
 
