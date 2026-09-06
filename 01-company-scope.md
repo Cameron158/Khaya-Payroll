@@ -7,7 +7,7 @@ Business description: Khaya Payroll is a cloud-based SaaS platform providing p
 Customer base: ~180 SME clients, approximately 40,000 employee records processed monthly across all clients combined. Client industries include retail, hospitality, professional services, and a small number of NGOs.
 ---
 
-3. Data Processed
+2. Data Processed
 
 ## Data Classification & Sensitivity
 
