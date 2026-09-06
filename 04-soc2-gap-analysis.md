@@ -238,7 +238,59 @@ encryption on all staff laptops as a baseline control regardless of role.
 
 ---
 
-*Remaining categories (CC7–CC9, Availability) in progress.*
+### CC7: System Operations
+
+**Requirement summary:** The organization must have the operational 
+capability to detect and respond to security events — including 
+monitoring for anomalies or suspicious activity, managing vulnerabilities 
+through regular scanning, and maintaining a tested incident response 
+capability, not merely a documented plan.
+
+**Current state:** There is no automated monitoring or intrusion 
+detection capability to flag suspicious activity — such as unusual login 
+attempts, multiple failed logins, or access from unrecognized locations 
+— meaning such activity would only be noticed if someone happened to 
+observe it manually, if at all. No vulnerability scanning is currently 
+performed against Khaya Payroll's platform, infrastructure, or 
+dependencies to identify known security weaknesses. While an incident 
+response plan has been recommended (per POPIA Condition 7), it has not 
+yet been tested through a tabletop exercise or simulation to confirm it 
+would actually function as intended during a real incident.
+
+**Gap identified:** Without monitoring or detection capability, a breach 
+could go unnoticed for an extended period, maximizing exposure — malware 
+could spread further, ransomware could be deployed unimpeded, and data 
+could continue to be accessed or exfiltrated with no internal signal to 
+prompt investigation. Without a tested incident response plan, even once 
+a breach is discovered, the absence of rehearsal means staff would face 
+confusion and wasted time determining roles and next steps during the 
+incident itself — precisely when speed matters most, and directly 
+undermining Khaya Payroll's ability to meet POPIA s22's "as soon as 
+reasonably possible" breach notification standard.
+
+**Risk rating:** High — this finding combines a detection gap with a 
+response readiness gap, meaning Khaya Payroll is currently poorly 
+positioned both to notice a breach quickly and to respond effectively 
+once one is found, compounding the severity of the underlying weaknesses 
+already identified in POPIA Condition 7.
+
+**Recommendation:** Enable and configure native alerting features 
+already available within Khaya Payroll's existing infrastructure — such 
+as flagging multiple failed login attempts or logins from unrecognized 
+locations or devices — as a lightweight, low-cost first step toward 
+breach detection, rather than investing in a dedicated enterprise 
+monitoring tool at this stage. Implement weekly vulnerability scans 
+using a free tool such as Nessus Essentials to identify known security 
+weaknesses in the platform and infrastructure, with findings triaged and 
+remediated according to severity. Conduct a quarterly tabletop exercise 
+simulating a security incident (e.g. a data breach or ransomware event) 
+to test and refine the incident response plan under realistic 
+conditions, ensuring staff understand their roles before a real incident 
+occurs.
+
+---
+
+*Remaining categories (CC8–CC9, Availability) in progress.*
 
 ---
 
