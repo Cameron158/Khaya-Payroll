@@ -401,7 +401,60 @@ can invoke their own contingency plans without waiting for platform
 restoration.
 
 ---
-*Remaining categories ( Availability) in progress.*
+
+### A1: Availability
+
+**Requirement summary:** The system must be available for operation 
+and use as committed to or agreed upon — requiring a defined uptime 
+commitment, active monitoring of actual availability against that 
+commitment, and proactive capacity planning to ensure the infrastructure 
+can support current and future demand.
+
+**Current state:** Khaya Payroll has no defined or documented uptime 
+commitment to clients — no SLA exists in any contract or terms of 
+service specifying what level of availability clients should expect. No 
+monitoring tool or process currently tracks whether the platform is 
+actually up or down, meaning an outage would only be detected when 
+clients contact support to report it rather than being caught and 
+actioned internally. No capacity planning has been conducted to assess 
+whether current infrastructure can support the platform's growth 
+trajectory — additional clients are onboarded without any formal 
+assessment of whether the system can handle the increased load reliably.
+
+**Gap identified:** Without a defined SLA, clients have no documented 
+basis for understanding what level of availability to expect, and no 
+contractual mechanism to hold Khaya Payroll accountable for service 
+commitments they are paying for — leaving the relationship entirely on 
+informal goodwill rather than measurable, enforceable terms. Without 
+uptime monitoring, Khaya Payroll cannot prove whether it is meeting any 
+availability standard, nor detect and respond to outages before clients 
+do — meaning the first signal of a platform failure is a client 
+complaint rather than an internal alert. Without capacity planning, the 
+impact of continued client growth on infrastructure remains entirely 
+unknown, creating a risk that the system degrades or fails under load 
+as the business scales, with no advance warning.
+
+**Risk rating:** Medium-High — while less severe than findings where 
+the underlying technical gap is entirely absent, A1's risk is 
+compounded by Khaya Payroll's growth trajectory: without an SLA, 
+monitoring, or capacity planning, the platform's availability posture 
+becomes increasingly difficult to defend as the client base scales, and 
+a single high-profile outage during payroll week could critically 
+damage client trust with no contractual or operational framework to 
+manage the fallout.
+
+**Recommendation:** Define and publish a formal SLA covering Khaya 
+Payroll's service commitments — including a 99% uptime target, response 
+time obligations, and client notification procedures for outages — 
+making these terms contractually binding rather than informal goodwill. 
+Implement UptimeRobot (free tier) to monitor platform availability every 
+5 minutes, with instant alerts to the IT Head and Information Officer 
+if the platform goes down, and use the historical uptime dashboard to 
+demonstrate SLA compliance to clients. Assign capacity planning 
+ownership to the IT Head, with a formal annual infrastructure review — 
+and an additional triggered review whenever client count grows by 20% 
+or more — to ensure the platform's infrastructure scales ahead of demand 
+rather than reactively after performance degrades.
 
 ---
 
