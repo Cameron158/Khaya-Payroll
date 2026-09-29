@@ -342,8 +342,66 @@ full change history for audit purposes. Emergency/forced updates should
 follow an expedited but still documented process, with a mandatory 
 after-the-fact review.
 
+
 ---
-*Remaining categories (CC9, Availability) in progress.*
+
+### CC9: Risk Mitigation
+
+**Requirement summary:** The organization must identify and manage risks 
+arising from vendors and business partners who interact with or affect 
+the system, and maintain business continuity and recovery plans to 
+ensure the organization can continue operating or recover quickly if 
+something disrupts the system.
+
+**Current state:** No vendor register exists to track third-party 
+sub-processors' certificate expiry dates, DPA status, or renewal 
+timelines — once a vendor is onboarded, there is no structured process 
+to monitor whether their security posture or certifications remain 
+current. On the business continuity side, there is no manual fallback 
+process for payroll if the platform goes offline, no way for clients to 
+access their employee data during an outage, no infrastructure 
+redundancy or backup system, and no client communication plan for 
+service disruptions — meaning a 48-hour outage during payroll week 
+would leave 180 client companies with no payroll capability and no 
+clear guidance on when service would be restored.
+
+**Gap identified:** Without a vendor register or ongoing certificate 
+tracking process, Khaya Payroll cannot confirm that third-party 
+sub-processors' security postures and certifications remain current 
+after onboarding — if a vendor's certification lapses or their security 
+is compromised, Khaya Payroll may remain exposed and potentially liable 
+without even being aware the risk has changed. Without a business 
+continuity plan, a platform outage during payroll week would effectively 
+stop business operations entirely — 180 client companies would be unable 
+to process payroll, ~40,000 employees would face delayed salary 
+payments, and with no manual fallback, no client communication plan, 
+and no infrastructure redundancy, recovery would depend entirely on 
+restoring the primary system with no alternative path available.
+
+**Risk rating:** High — this finding combines two compounding gaps 
+(vendor monitoring and business continuity) both of which directly 
+affect Khaya Payroll's ability to maintain service continuity for 180 
+client companies processing time-sensitive monthly payroll runs, with 
+no fallback available if either the platform or a critical vendor fails.
+
+**Recommendation:** Establish a vendor register, owned by the 
+Information Officer, tracking all third-party sub-processors' DPA 
+status, certificate types, expiry dates, and renewal timelines — with 
+automated reminders triggered ahead of expiry so the IO can proactively 
+request updated certifications before they lapse. For business 
+continuity, implement three minimum-viable controls: (1) infrastructure 
+redundancy (a backup/failover system ensuring platform data and 
+functionality remain accessible if the primary system fails); (2) a 
+documented manual payroll fallback process clients can follow to process 
+payroll via spreadsheet or alternative means if the platform is 
+completely unavailable; and (3) a client communication plan requiring 
+the IO to notify all affected clients within 8 hours of a confirmed 
+outage, through each client's designated contact channel, so clients 
+can invoke their own contingency plans without waiting for platform 
+restoration.
+
+---
+*Remaining categories ( Availability) in progress.*
 
 ---
 
