@@ -2,6 +2,7 @@
 
 ## 1. Purpose & Methodology
 
+
 This document assesses Khaya Payroll's current security posture against the SOC 2 Trust Services Criteria, focused on **Security** (the mandatory Common Criteria, CC1–CC9) and **Availability** (selected per [`01-company-scope.md`](./01-company-scope.md) Section 7, given payroll's SLA-driven, must-run-on-time nature).
 
 Each control category is assessed using the same five-part structure applied throughout the [POPIA Gap Assessment](./03-popia-gap-assessment.md):
