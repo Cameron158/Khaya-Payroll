@@ -290,7 +290,59 @@ occurs.
 
 ---
 
-*Remaining categories (CC8–CC9, Availability) in progress.*
+### CC8: Change Management
+
+**Requirement summary:** Changes to systems, infrastructure, and 
+configurations must be authorized, tested, approved, documented, and 
+implemented in a controlled way — including a defined process for 
+emergency changes and the ability to reverse a change if it introduces 
+critical errors.
+
+**Current state:** There is no formal change management process 
+governing how updates to the platform move from development to 
+production. Code changes can be pushed to the live environment without 
+peer review, testing, or approval — and no record is kept of what 
+changed, when, or by whom. In the event a release introduces a critical 
+error (e.g. a broken payroll calculation on payroll day), there is no 
+defined rollback plan to reverse the change quickly, leaving the 
+platform and its ~40,000 employee records potentially exposed to 
+unchecked, unverified updates at any time.
+
+**Gap identified:** Without a formal change management process, 
+untested or unreviewed code changes could introduce critical errors that 
+go undetected until payroll day itself — the worst possible moment to 
+discover a problem, given that 180 client companies and their employees 
+depend on the platform running correctly on a fixed monthly cycle. 
+Unlike a content website where a bad release causes inconvenience, a 
+broken payroll calculation or failed payment run directly delays real 
+employees' salaries, with immediate financial consequences. Without a 
+rollback plan, there is no fast path back to a known-good state, meaning 
+the delay compounds while engineers attempt to diagnose and fix the 
+issue under pressure rather than simply reverting to the previous 
+working version.
+
+**Risk rating:** High — the combination of no pre-release testing, no 
+change records, and no revert capability on a platform processing 
+~40,000 employee salary payments monthly means a single unreviewed 
+change could simultaneously affect 180 client companies on a fixed 
+payroll deadline, with direct financial consequences for real employees 
+that cannot be easily undone once a payment run has failed.
+
+**Recommendation:** Implement a formal pre-change approval process 
+requiring a completed Change Request (RFC) for all platform updates 
+before they go live — covering the reason for the change, what is being 
+updated, compatibility considerations, and a defined rollback plan. Use 
+a version control system (e.g. Git/GitLab) as the authoritative change 
+log, capturing what changed, who made it, and when, for every update to 
+the codebase or infrastructure. In the event of a critical error 
+post-release, use a revert operation (rather than a destructive 
+rollback) to return to the previous working state while preserving the 
+full change history for audit purposes. Emergency/forced updates should 
+follow an expedited but still documented process, with a mandatory 
+after-the-fact review.
+
+---
+*Remaining categories (CC9, Availability) in progress.*
 
 ---
 
