@@ -1,0 +1,29 @@
+KHAYA PAYROLL (PTY) LTD — CONSOLIDATED RISK REGISTER;;;;;;;;;;;;;
+POPIA (8 Conditions) + SOC 2 (CC1–CC9, A1)  |  Version 1.0  |  Prepared for portfolio review;;;;;;;;;;;;;
+Risk ID;Risk Description;Source;Category;"Likelihood
+(1–3)";"Impact
+(1–3)";"Inherent
+Risk Score";Current Controls;"Control
+Effectiveness";"Residual
+Risk Score";Treatment;Owner;Target Date;Status
+R-001;"No Information Officer registered with the Information Regulator; no formal ownership of POPIA compliance obligations.";POPIA;Legal/Regulatory;3;3;9;CEO handles queries informally on an ad hoc basis.;Low;8;Mitigate;CEO / Incoming IO;Phase 1;Open
+R-002;"Over-collection of special personal information (medical/health data) for sick-leave documentation; no minimum-necessary standard defined.";POPIA;Legal/Regulatory;2;3;6;No formal control in place.;Low;5;Mitigate;Information Officer;Phase 2;Open
+R-003;No documented legal basis mapping data categories to POPIA processing conditions (contract necessity, legal obligation, etc.).;POPIA;Legal/Regulatory;2;3;6;No formal control in place.;Low;5;Mitigate;Information Officer;Phase 2;Open
+R-004;No privacy notice or disclosure process provided to client companies to inform employees of data collection purpose and retention period.;POPIA;Legal/Regulatory;3;2;6;No formal control in place.;Low;5;Mitigate;Information Officer;Phase 2;Open
+R-005;"No data retention policy; former employee records persist indefinitely with no defined deletion or archival trigger.";POPIA;Operational;3;3;9;No formal control in place.;Low;8;Mitigate;Information Officer / IT Head;Phase 2;Open
+R-006;"No Data Processing Agreements (DPAs) with third-party sub-processors (Intercom, SendGrid, Payment Gateway); further processing risk unmanaged.";POPIA;Legal/Regulatory;2;3;6;No formal control in place.;Low;5;Mitigate;CEO / Information Officer;Phase 1;Open
+R-007;"No validation step for sensitive data field updates (banking details, ID numbers); mispayments and fraudulent updates may go undetected.";POPIA;Operational;2;3;6;Employees and HR admins update fields via self-service portal with no secondary confirmation.;Low;5;Mitigate;IT Head;Phase 2;Open
+R-008;"No Record of Processing Activities (ROPA); employees unaware of data subject rights (access, correction, objection).";POPIA;Legal/Regulatory;3;3;9;No formal control in place.;Low;8;Mitigate;Information Officer;Phase 2;Open
+R-009;"Single-factor authentication only (username/password); no MFA, no encryption confirmed on sensitive fields; broad unlogged internal admin access to all client data.";POPIA;Technical;3;3;9;Username/password authentication in place.;Low;8;Mitigate;IT Head;Phase 2;Open
+R-010;"No documented incident response plan or breach notification procedure; no defined internal escalation path or 72-hour notification benchmark.";POPIA;Operational;3;3;9;No formal control in place.;Low;8;Mitigate;Information Officer / IT Head;Phase 1;Open
+R-011;"No defined data subject request process; requests to access, correct, or delete personal information go unmet with no defined owner or timeline.";POPIA;Legal/Regulatory;3;3;9;No formal control in place.;Low;8;Mitigate;Information Officer;Phase 2;Open
+R-012;"No security-specific governance structure; no security policy, no assigned security ownership beyond informal CEO involvement.";SOC 2;Operational;3;3;9;CEO handles security queries informally.;Low;8;Mitigate;CEO / Information Officer;Phase 1;Open
+R-013;"No anonymous internal reporting channel for suspected security issues; no external responsible disclosure policy or security@ contact point.";SOC 2;Operational;2;3;6;No formal control in place.;Low;5;Mitigate;Information Officer;Phase 1;Open
+R-014;"No formal, repeatable risk assessment process; risk reviews are reactive and ad hoc rather than proactive and scheduled.";SOC 2;Operational;3;2;6;No formal control in place.;Low;5;Mitigate;Information Officer / IT Head;Phase 3;Open
+R-015;"No mechanism to verify that controls are functioning as intended over time; controls could silently decay without detection.";SOC 2;Operational;2;3;6;No formal control in place.;Low;5;Mitigate;Information Officer / IT Head;Phase 3;Open
+R-016;"No formally adopted policies or procedures; all assessment recommendations remain unadopted suggestions without CEO sign-off.";SOC 2;Operational;3;3;9;No formal control in place.;Low;8;Mitigate;CEO / Information Officer;Phase 2;Open
+R-017;"No device offboarding procedure; departing staff laptops not consistently returned or wiped; no building access controls.";SOC 2;Technical;2;3;6;No formal control in place.;Low;5;Mitigate;IT Head;Phase 2;Open
+R-018;"No automated monitoring or alerting for suspicious activity; no vulnerability scanning; incident response plan untested.";SOC 2;Technical;3;3;9;No formal control in place.;Low;8;Mitigate;IT Head;Phase 1 / Phase 2;Open
+R-019;"No formal change management process; code pushed to production without peer review, testing, approval, or documented revert plan.";SOC 2;Technical;3;3;9;No formal control in place.;Low;8;Mitigate;IT Head;Phase 1 / Phase 2;Open
+R-020;"No vendor register or certificate renewal tracking; no business continuity plan, manual payroll fallback, or client communication plan.";SOC 2;Operational;3;3;9;No formal control in place.;Low;8;Mitigate;Information Officer / IT Head;Phase 1 / Phase 2;Open
+R-021;"No SLA defined with clients; no uptime monitoring; no capacity planning to manage infrastructure growth.";SOC 2;Operational;2;3;6;No formal control in place.;Low;5;Mitigate;IT Head;Phase 2 / Phase 3;Open
